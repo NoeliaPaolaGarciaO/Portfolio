@@ -1,0 +1,13 @@
+<svg viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Monograma NG, iniciales de Noelia García">
+  <circle cx="22" cy="22" r="21" fill="none" stroke="#4B3869" stroke-width="1"/>
+  <text
+    x="22" y="22"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="'Fraunces', Georgia, serif"
+    font-weight="600"
+    font-size="15"
+    letter-spacing="0.5"
+    fill="#4B3869"
+  >NG</text>
+</svg>
