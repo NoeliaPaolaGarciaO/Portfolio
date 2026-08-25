@@ -1,335 +1,496 @@
-"use strict";
+document.addEventListener('DOMContentLoaded', () => {
 
 
-const menuToggle =
-    document.querySelector(".menu-toggle");
+    /* =====================================================
+       ELEMENTOS
+    ===================================================== */
 
-const navbar =
-    document.querySelector(".navbar");
+    const header =
+        document.querySelector('.header');
 
-const navLinks =
-    document.querySelectorAll(".navbar a");
+    const menuToggle =
+        document.querySelector('.menu-toggle');
 
-const header =
-    document.querySelector(".header");
+    const navbar =
+        document.querySelector('.navbar');
 
-const backToTop =
-    document.getElementById("backToTop");
+    const backToTop =
+        document.querySelector('#backToTop');
 
-const sections =
-    document.querySelectorAll("main section[id]");
+    const currentYear =
+        document.querySelector('#currentYear');
 
-const animatedElements =
-    document.querySelectorAll(
-        ".about-card, .project-card, .timeline-content, .skill-card, .contact-card"
-    );
+    const navLinks =
+        document.querySelectorAll('.navbar a');
 
-
-/* =====================================================
-   MENÚ MÓVIL
-===================================================== */
-
-if (menuToggle && navbar) {
-
-    menuToggle.addEventListener("click", () => {
-
-        const isOpen =
-            navbar.classList.toggle("active");
-
-        menuToggle.setAttribute(
-            "aria-expanded",
-            String(isOpen)
-        );
-
-        menuToggle.setAttribute(
-            "aria-label",
-            isOpen
-                ? "Cerrar menú"
-                : "Abrir menú"
-        );
-
-    });
-
-}
+    const sections =
+        document.querySelectorAll('main section[id]');
 
 
-navLinks.forEach(link => {
 
-    link.addEventListener("click", () => {
+    /* =====================================================
+       AÑO DEL FOOTER
+    ===================================================== */
 
-        navbar?.classList.remove("active");
+    if (currentYear) {
 
-        menuToggle?.setAttribute(
-            "aria-expanded",
-            "false"
-        );
+        currentYear.textContent =
+            new Date().getFullYear();
 
-        menuToggle?.setAttribute(
-            "aria-label",
-            "Abrir menú"
-        );
-
-    });
-
-});
-
-
-/* =====================================================
-   HEADER + BOTÓN VOLVER ARRIBA
-===================================================== */
-
-const updateScrollUI = () => {
-
-    const scrollY =
-        window.scrollY;
-
-
-    header?.classList.toggle(
-        "scrolled",
-        scrollY > 30
-    );
-
-
-    backToTop?.classList.toggle(
-        "show",
-        scrollY > 600
-    );
-
-};
-
-
-window.addEventListener(
-    "scroll",
-    updateScrollUI,
-    {
-        passive: true
     }
-);
 
 
-updateScrollUI();
+
+    /* =====================================================
+       MENÚ MOBILE
+    ===================================================== */
+
+    if (menuToggle && navbar) {
 
 
-/* =====================================================
-   VOLVER ARRIBA
-===================================================== */
+        menuToggle.addEventListener('click', () => {
 
-backToTop?.addEventListener(
-    "click",
-    () => {
+            const isOpen =
+                navbar.classList.toggle('active');
 
-        window.scrollTo({
 
-            top: 0,
+            menuToggle.setAttribute(
+                'aria-expanded',
+                String(isOpen)
+            );
 
-            behavior: "smooth"
+
+            menuToggle.setAttribute(
+                'aria-label',
+                isOpen
+                    ? 'Cerrar menú'
+                    : 'Abrir menú'
+            );
+
+        });
+
+
+
+        navLinks.forEach(link => {
+
+            link.addEventListener('click', () => {
+
+                navbar.classList.remove('active');
+
+
+                menuToggle.setAttribute(
+                    'aria-expanded',
+                    'false'
+                );
+
+
+                menuToggle.setAttribute(
+                    'aria-label',
+                    'Abrir menú'
+                );
+
+            });
 
         });
 
     }
-);
 
 
-/* =====================================================
-   SCROLL SUAVE
-===================================================== */
 
-document
-    .querySelectorAll('a[href^="#"]')
-    .forEach(anchor => {
+    /* =====================================================
+       CERRAR MENÚ AL CAMBIAR A DESKTOP
+    ===================================================== */
 
-        anchor.addEventListener(
-            "click",
-            event => {
+    window.addEventListener('resize', () => {
 
-                const targetId =
-                    anchor.getAttribute("href");
+        if (
+            window.innerWidth > 850 &&
+            navbar &&
+            menuToggle
+        ) {
 
+            navbar.classList.remove('active');
 
-                if (
-                    !targetId ||
-                    targetId === "#"
-                ) {
+            menuToggle.setAttribute(
+                'aria-expanded',
+                'false'
+            );
 
-                    return;
+            menuToggle.setAttribute(
+                'aria-label',
+                'Abrir menú'
+            );
 
-                }
+        }
 
-
-                const target =
-                    document.querySelector(targetId);
-
-
-                if (!target) {
-
-                    return;
-
-                }
+    });
 
 
-                event.preventDefault();
+
+    /* =====================================================
+       HEADER AL HACER SCROLL
+    ===================================================== */
+
+    const updateHeader = () => {
+
+        if (!header) return;
 
 
-                target.scrollIntoView({
+        if (window.scrollY > 30) {
 
-                    behavior: "smooth",
+            header.classList.add('scrolled');
 
-                    block: "start"
+        } else {
+
+            header.classList.remove('scrolled');
+
+        }
+
+    };
+
+
+
+    /* =====================================================
+       BOTÓN VOLVER ARRIBA
+    ===================================================== */
+
+    const updateBackToTop = () => {
+
+        if (!backToTop) return;
+
+
+        if (window.scrollY > 500) {
+
+            backToTop.classList.add('show');
+
+        } else {
+
+            backToTop.classList.remove('show');
+
+        }
+
+    };
+
+
+
+    if (backToTop) {
+
+        backToTop.addEventListener(
+            'click',
+            () => {
+
+                window.scrollTo({
+
+                    top: 0,
+
+                    behavior: 'smooth'
 
                 });
 
             }
         );
 
-    });
+    }
 
 
-/* =====================================================
-   ANIMACIONES AL HACER SCROLL
-===================================================== */
 
-if ("IntersectionObserver" in window) {
+    /* =====================================================
+       NAVEGACIÓN ACTIVA
+    ===================================================== */
 
-    const observer =
-        new IntersectionObserver(
-            entries => {
+    const updateActiveSection = () => {
 
-                entries.forEach(
-                    entry => {
+
+        /*
+         * Si estamos en una página de proyecto
+         * con navegación hacia el index principal,
+         * no intentamos marcar secciones del proyecto
+         * como si fueran secciones del portfolio.
+         */
+
+        const hasLocalSectionNavigation =
+            Array.from(navLinks).some(link => {
+
+                const href =
+                    link.getAttribute('href');
+
+                return href &&
+                    href.startsWith('#');
+
+            });
+
+
+        if (!hasLocalSectionNavigation) {
+            return;
+        }
+
+
+
+        let currentSection = '';
+
+
+
+        sections.forEach(section => {
+
+            const sectionTop =
+                section.offsetTop - 150;
+
+            const sectionBottom =
+                sectionTop +
+                section.offsetHeight;
+
+
+            if (
+                window.scrollY >= sectionTop &&
+                window.scrollY < sectionBottom
+            ) {
+
+                currentSection =
+                    section.id;
+
+            }
+
+        });
+
+
+
+        navLinks.forEach(link => {
+
+            link.classList.remove('active');
+
+
+            const href =
+                link.getAttribute('href');
+
+
+            if (
+                href === `#${currentSection}`
+            ) {
+
+                link.classList.add('active');
+
+            }
+
+        });
+
+    };
+
+
+
+    /* =====================================================
+       ANIMACIONES DE ENTRADA
+    ===================================================== */
+
+    const animatedElements =
+        document.querySelectorAll(
+            `
+            .section-header,
+            .project-card,
+            .about-card,
+            .timeline-item,
+            .skill-card,
+            .contact-card,
+            .process-card,
+            .project-gallery-item,
+            .project-collection-card
+            `
+        );
+
+
+
+    if (
+        'IntersectionObserver' in window
+    ) {
+
+
+        const animationObserver =
+            new IntersectionObserver(
+
+                (entries, observer) => {
+
+                    entries.forEach(entry => {
 
                         if (
                             entry.isIntersecting
                         ) {
 
-                            entry.target
-                                .classList
-                                .add("visible");
+                            entry.target.classList.add(
+                                'visible'
+                            );
 
 
-                            observer
-                                .unobserve(
-                                    entry.target
-                                );
+                            observer.unobserve(
+                                entry.target
+                            );
 
                         }
 
-                    }
+                    });
+
+                },
+
+                {
+                    threshold: 0.12
+                }
+
+            );
+
+
+
+        animatedElements.forEach(
+            (element, index) => {
+
+                element.classList.add(
+                    'fade-up'
                 );
 
-            },
-            {
-                threshold: 0.12
+
+                /*
+                 * Retraso escalonado.
+                 */
+
+                if (
+                    element.classList.contains(
+                        'project-card'
+                    ) ||
+                    element.classList.contains(
+                        'about-card'
+                    ) ||
+                    element.classList.contains(
+                        'process-card'
+                    ) ||
+                    element.classList.contains(
+                        'project-gallery-item'
+                    )
+                ) {
+
+                    element.style.transitionDelay =
+                        `${(index % 4) * 0.08}s`;
+
+                }
+
+
+                animationObserver.observe(
+                    element
+                );
+
             }
         );
 
 
-    animatedElements.forEach(
-        element => {
-
-            element.classList.add(
-                "fade-up"
-            );
-
-            observer.observe(
-                element
-            );
-
-        }
-    );
-
-} else {
-
-    animatedElements.forEach(
-        element => {
-
-            element.classList.add(
-                "visible"
-            );
-
-        }
-    );
-
-}
+    } else {
 
 
-/* =====================================================
-   SECCIÓN ACTIVA EN EL MENÚ
-===================================================== */
+        animatedElements.forEach(
+            element => {
 
-if ("IntersectionObserver" in window) {
+                element.classList.add(
+                    'visible'
+                );
 
-    const sectionObserver =
-        new IntersectionObserver(
-            entries => {
+            }
+        );
 
-                entries.forEach(
-                    entry => {
-
-                        if (
-                            !entry.isIntersecting
-                        ) {
-
-                            return;
-
-                        }
+    }
 
 
-                        navLinks.forEach(
-                            link => {
 
-                                link.classList.toggle(
+    /* =====================================================
+       SMOOTH SCROLL PARA ANCLAS
+    ===================================================== */
 
-                                    "active",
+    document
+        .querySelectorAll('a[href^="#"]')
+        .forEach(link => {
 
-                                    link.getAttribute(
-                                        "href"
-                                    ) ===
-                                    `#${entry.target.id}`
+            link.addEventListener(
+                'click',
+                event => {
 
-                                );
+                    const targetId =
+                        link.getAttribute('href');
 
-                            }
+
+                    if (
+                        !targetId ||
+                        targetId === '#'
+                    ) {
+                        return;
+                    }
+
+
+                    const target =
+                        document.querySelector(
+                            targetId
                         );
 
+
+                    if (!target) {
+                        return;
                     }
-                );
-
-            },
-            {
-                rootMargin:
-                    "-35% 0px -55% 0px",
-
-                threshold: 0
-            }
-        );
 
 
-    sections.forEach(
-        section => {
+                    event.preventDefault();
 
-            sectionObserver.observe(
-                section
+
+                    const headerHeight =
+                        header
+                            ? header.offsetHeight
+                            : 0;
+
+
+                    const targetPosition =
+                        target.getBoundingClientRect().top +
+                        window.scrollY -
+                        headerHeight -
+                        10;
+
+
+                    window.scrollTo({
+
+                        top: targetPosition,
+
+                        behavior: 'smooth'
+
+                    });
+
+                }
             );
 
+        });
+
+
+
+    /* =====================================================
+       SCROLL
+    ===================================================== */
+
+    const handleScroll = () => {
+
+        updateHeader();
+
+        updateBackToTop();
+
+        updateActiveSection();
+
+    };
+
+
+
+    window.addEventListener(
+        'scroll',
+        handleScroll,
+        {
+            passive: true
         }
     );
 
-}
 
 
-/* =====================================================
-   AÑO AUTOMÁTICO
-===================================================== */
+    /* =====================================================
+       ESTADO INICIAL
+    ===================================================== */
 
-const currentYear =
-    document.getElementById(
-        "currentYear"
-    );
+    handleScroll();
 
-
-if (currentYear) {
-
-    currentYear.textContent =
-        new Date().getFullYear();
-
-}
+});

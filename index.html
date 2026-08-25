@@ -5,11 +5,14 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
-        content="Portfolio de Noelia García: Salesforce, desarrollo web, automatización y análisis de datos."
+        content="Portfolio de Noelia García: tecnología, turismo, Salesforce, desarrollo web y creatividad."
     >
 
     <meta
@@ -19,13 +22,15 @@
 
     <meta
         name="theme-color"
-        content="#4B3869"
+        content="#5b3b8c"
     >
 
     <meta
         name="robots"
         content="index, follow"
     >
+
+    <!-- OPEN GRAPH -->
 
     <meta
         property="og:title"
@@ -34,7 +39,7 @@
 
     <meta
         property="og:description"
-        content="Salesforce, desarrollo web, automatización y análisis de datos."
+        content="Tecnología, turismo y creatividad. Salesforce, desarrollo web y proyectos digitales."
     >
 
     <meta
@@ -52,12 +57,21 @@
         content="https://noeliapaolagarciao.github.io/Portfolio/"
     >
 
-    <title>Noelia García | Salesforce · Web · Data</title>
+
+    <title>
+        Noelia García | Tecnología · Turismo · Creatividad
+    </title>
+
+
+    <!-- FAVICON -->
 
     <link
         rel="icon"
         href="favicon.ico"
     >
+
+
+    <!-- GOOGLE FONTS -->
 
     <link
         rel="preconnect"
@@ -75,6 +89,9 @@
         rel="stylesheet"
     >
 
+
+    <!-- CSS -->
+
     <link
         rel="stylesheet"
         href="css/style.css"
@@ -86,1437 +103,1572 @@
 <body>
 
 
-<header class="header">
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
 
-    <div class="container header-inner">
+    <header class="header">
 
-        <a
-            href="#home"
-            class="logo"
-            aria-label="Noelia García - Inicio"
-        >
-            NG
-        </a>
+        <div class="container header-inner">
 
 
-        <button
-            class="menu-toggle"
-            type="button"
-            aria-label="Abrir menú"
-            aria-expanded="false"
-            aria-controls="main-navigation"
-        >
-
-            <span></span>
-            <span></span>
-            <span></span>
-
-        </button>
+            <a
+                href="#home"
+                class="logo"
+                aria-label="Noelia García - Inicio"
+            >
+                NG
+            </a>
 
 
-        <nav
-            class="navbar"
-            id="main-navigation"
-            aria-label="Navegación principal"
-        >
+            <!-- MENÚ MOBILE -->
 
-            <ul>
-
-                <li>
-                    <a href="#home">
-                        Inicio
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#about">
-                        Sobre mí
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#projects">
-                        Proyectos
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#salesforce">
-                        Salesforce
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#skills">
-                        Tecnologías
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#contact">
-                        Contacto
-                    </a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-    </div>
-
-</header>
-
-
-
-<main>
-
-
-<!-- =====================================================
-     HERO
-===================================================== -->
-
-<section
-    class="hero"
-    id="home"
->
-
-    <div class="container hero-grid">
-
-
-        <div class="hero-image">
-
-            <img
-                src="assets/images/hero/foto-noelia.png"
-                alt="Noelia García"
-                fetchpriority="high"
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="main-navigation"
             >
 
-        </div>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
 
 
+            <!-- NAVEGACIÓN -->
 
-        <div class="hero-content">
-
-            <span class="tag">
-                Salesforce · Desarrollo Web · Data
-            </span>
-
-
-            <h1>
-                Noelia García
-            </h1>
-
-
-            <h2>
-                Construyo soluciones digitales conectando
-                tecnología, procesos y experiencia de usuario.
-            </h2>
-
-
-            <p class="hero-description">
-
-                Mi experiencia en turismo me ayudó a entender
-                necesidades reales de clientes y negocios.
-
-                Hoy combino ese conocimiento con Salesforce,
-                desarrollo web, automatización y análisis de datos
-                para transformar ideas y procesos en soluciones digitales.
-
-            </p>
-
-
-            <div
-                class="hero-tags"
-                aria-label="Principales áreas"
+            <nav
+                class="navbar"
+                id="main-navigation"
+                aria-label="Navegación principal"
             >
 
-                <span>Salesforce</span>
+                <ul>
 
-                <span>HTML5</span>
+                    <li>
+                        <a href="#home">
+                            Inicio
+                        </a>
+                    </li>
 
-                <span>CSS3</span>
+                    <li>
+                        <a href="#about">
+                            Sobre mí
+                        </a>
+                    </li>
 
-                <span>JavaScript</span>
+                    <li>
+                        <a href="#projects">
+                            Proyectos
+                        </a>
+                    </li>
 
-                <span>Power BI</span>
+                    <li>
+                        <a href="#salesforce">
+                            Salesforce
+                        </a>
+                    </li>
 
-            </div>
+                    <li>
+                        <a href="#skills">
+                            Tecnologías
+                        </a>
+                    </li>
 
+                    <li>
+                        <a href="#contact">
+                            Contacto
+                        </a>
+                    </li>
 
-            <div class="hero-buttons">
+                </ul>
 
-                <a
-                    href="#projects"
-                    class="btn btn-primary"
-                >
-                    Ver proyectos
-                </a>
-
-
-                <a
-                    href="https://github.com/NoeliaPaolaGarciaO"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn btn-secondary"
-                >
-                    GitHub
-                </a>
-
-
-                <a href="assets/cv/CV-Noelia-Garcia.pdf"
-                class="btn btn-outline" 
-                target="_blank" 
-                rel="noopener noreferrer">
-                 Descargar CV
-                </a>
-
-            </div>
-
-
-            <div class="hero-note">
-
-                <span>
-                    📍 Bahía Blanca, Argentina
-                </span>
-
-                <span>
-                    Aprendiendo · construyendo · mejorando
-                </span>
-
-            </div>
+            </nav>
 
         </div>
 
-    </div>
+    </header>
 
-</section>
 
 
+    <main>
 
-<!-- =====================================================
-     SOBRE MÍ
-===================================================== -->
 
-<section
-    class="about section"
-    id="about"
->
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
 
-    <div class="container">
+        <section
+            class="hero"
+            id="home"
+        >
 
+            <div class="container hero-grid">
 
-        <div class="section-header">
 
-            <span class="section-tag">
-                Sobre mí
-            </span>
+                <!-- FOTO -->
 
-
-            <h2>
-                Tecnología con una mirada de negocio
-            </h2>
-
-
-            <p>
-
-                Mi recorrido comenzó en turismo,
-                donde desarrollé experiencia en administración,
-                organización, ventas, operaciones y atención al cliente.
-
-                Esa experiencia hoy es una parte importante
-                de mi forma de pensar la tecnología.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="about-grid">
-
-
-            <div class="about-text">
-
-                <p>
-
-                    Me interesa crear soluciones que no solo se vean bien,
-                    sino que resuelvan problemas concretos:
-                    ordenar información, automatizar tareas,
-                    mejorar procesos y facilitar la experiencia
-                    de las personas.
-
-                </p>
-
-
-                <p>
-
-                    Actualmente continúo fortaleciendo mis conocimientos
-                    en Salesforce, desarrollo Frontend,
-                    análisis de datos y automatización mediante
-                    formación y proyectos prácticos.
-
-                </p>
-
-
-                <a
-                    href="#contact"
-                    class="btn btn-primary"
-                >
-                    Conocer mis enlaces
-                </a>
-
-            </div>
-
-
-
-            <div class="about-cards">
-
-
-                <article class="about-card">
-
-                    <span>
-                        01 · Turismo
-                    </span>
-
-                    <h3>
-                        Experiencia real de negocio
-                    </h3>
-
-                    <p>
-                        Clientes, ventas, reservas,
-                        operaciones y atención personalizada.
-                    </p>
-
-                </article>
-
-
-
-                <article class="about-card">
-
-                    <span>
-                        02 · Salesforce
-                    </span>
-
-                    <h3>
-                        CRM & automatización
-                    </h3>
-
-                    <p>
-                        Objetos, Flow Builder,
-                        validaciones, procesos y gestión de datos.
-                    </p>
-
-                </article>
-
-
-
-                <article class="about-card">
-
-                    <span>
-                        03 · Data
-                    </span>
-
-                    <h3>
-                        Información para decidir
-                    </h3>
-
-                    <p>
-                        Excel, Power BI y visualización
-                        para convertir datos en información útil.
-                    </p>
-
-                </article>
-
-
-
-                <article class="about-card">
-
-                    <span>
-                        04 · Web
-                    </span>
-
-                    <h3>
-                        Interfaces digitales
-                    </h3>
-
-                    <p>
-                        HTML, CSS y JavaScript para crear
-                        experiencias responsive y fáciles de usar.
-                    </p>
-
-                </article>
-
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     PROYECTOS
-===================================================== -->
-
-<section
-    class="projects section"
-    id="projects"
->
-
-    <div class="container">
-
-
-        <div class="section-header">
-
-            <span class="section-tag">
-                Proyectos
-            </span>
-
-
-            <h2>
-                Lo que estoy construyendo
-            </h2>
-
-
-            <p>
-
-                Una selección de proyectos que muestran
-                distintas partes de mi recorrido:
-                productos digitales, Salesforce,
-                desarrollo web y creatividad.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="projects-grid">
-
-
-            <!-- TRAVELCORE -->
-
-            <article class="project-card featured">
-
-                <div class="project-image-wrap">
+                <div class="hero-image">
 
                     <img
-                        src="assets/images/projects/travelcore-saas/portada.png"
-                        alt="Vista de TravelCore SaaS"
-                        loading="lazy"
-                    >
-
-                    <span class="project-label">
-                        Proyecto principal
-                    </span>
-
-                </div>
-
-
-                <div class="project-content">
-
-                    <span class="project-category">
-                        SaaS · Turismo
-                    </span>
-
-
-                    <h3>
-                        TravelCore SaaS
-                    </h3>
-
-
-                    <p>
-
-                        Plataforma en desarrollo para centralizar
-                        clientes, cotizaciones, reservas, vouchers,
-                        proveedores y procesos operativos
-                        de agencias de viajes.
-
-                    </p>
-
-
-                    <div class="project-tech">
-
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-                        <span>Supabase</span>
-
-                    </div>
-
-
-                    <div class="project-footer">
-
-                        <span class="status development">
-                            En desarrollo
-                        </span>
-
-
-                        <div class="project-links">
-
-                            <a
-                                href="https://noeliapaolagarciao.github.io/travelcore-saas/login.html"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Demo ↗
-                            </a>
-
-
-                            <a
-                                href="https://github.com/NoeliaPaolaGarciaO/travelcore-saas"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                GitHub ↗
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- SALESFORCE -->
-
-            <article class="project-card">
-
-                <div class="project-image-wrap">
-
-                    <img
-                        src="assets/images/projects/salesforce-crm/portada.png"
-                        alt="Proyecto Salesforce CRM"
-                        loading="lazy"
+                        src="assets/images/hero/foto-noelia.png"
+                        alt="Noelia García"
+                        fetchpriority="high"
                     >
 
                 </div>
 
 
-                <div class="project-content">
+                <!-- CONTENIDO -->
 
-                    <span class="project-category">
-                        Salesforce
+                <div class="hero-content">
+
+                    <span class="tag">
+                        Tecnología · Turismo · Creatividad
                     </span>
 
 
-                    <h3>
-                        TravelCore CRM
-                    </h3>
+                    <h1>
+                        Noelia García
+                    </h1>
 
 
-                    <p>
+                    <h2>
+                        Construyo soluciones donde la tecnología,
+                        el turismo y la creatividad se encuentran.
+                    </h2>
 
-                        Proyecto CRM orientado a una agencia
-                        de viajes, con objetos personalizados,
-                        relaciones, Flow Builder,
-                        automatizaciones y procesos comerciales.
+
+                    <p class="hero-description">
+
+                        Mi experiencia en turismo me permitió conocer
+                        de cerca las necesidades de clientes y negocios.
+
+                        Hoy combino esa mirada con Salesforce,
+                        desarrollo web y herramientas digitales
+                        para transformar ideas y procesos
+                        en soluciones concretas.
 
                     </p>
 
 
-                    <div class="project-tech">
+                    <div
+                        class="hero-tags"
+                        aria-label="Principales áreas"
+                    >
 
                         <span>Salesforce</span>
-                        <span>Flow Builder</span>
-                        <span>CRM</span>
-                        <span>Automation</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
 
                     </div>
 
 
-                    <div class="project-footer">
+                    <div class="hero-buttons">
 
-                        <span class="status">
-                            Portfolio
-                        </span>
-
-
-                        <a href="#salesforce">
-                            Ver recorrido ↗
+                        <a
+                            href="#projects"
+                            class="btn btn-primary"
+                        >
+                            Ver proyectos
                         </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- CHAIN OF LINKS -->
-
-            <article class="project-card">
-
-                <div class="project-image-wrap">
-
-                    <img
-                        src="assets/images/projects/chain-of-links/portada.png"
-                        alt="Vista de Chain of Links"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-                <div class="project-content">
-
-                    <span class="project-category">
-                        Frontend
-                    </span>
-
-
-                    <h3>
-                        Chain of Links
-                    </h3>
-
-
-                    <p>
-
-                        Página para reunir enlaces personales
-                        en un solo lugar, desarrollada con HTML,
-                        CSS y JavaScript y pensada para una
-                        experiencia simple y responsive.
-
-                    </p>
-
-
-                    <div class="project-tech">
-
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-
-                    </div>
-
-
-                    <div class="project-footer">
-
-                        <span class="status">
-                            Finalizado
-                        </span>
-
-
-                        <div class="project-links">
-
-                            <a
-                                href="https://noeliapaolagarciao.github.io/chain_of_links/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Demo ↗
-                            </a>
-
-
-                            <a
-                                href="https://github.com/NoeliaPaolaGarciaO/chain_of_links"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                GitHub ↗
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- PORTFOLIO -->
-
-            <article class="project-card">
-
-                <div class="project-image-wrap">
-
-                    <img
-                        src="assets/images/projects/portfolio/portada.png"
-                        alt="Vista del portfolio personal"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-                <div class="project-content">
-
-                    <span class="project-category">
-                        Frontend
-                    </span>
-
-
-                    <h3>
-                        Este portfolio
-                    </h3>
-
-
-                    <p>
-
-                        Sitio personal desarrollado desde cero
-                        con HTML5, CSS3 y JavaScript,
-                        con diseño responsive, navegación por secciones,
-                        animaciones y publicación en GitHub Pages.
-
-                    </p>
-
-
-                    <div class="project-tech">
-
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-                        <span>GitHub Pages</span>
-
-                    </div>
-
-
-                    <div class="project-footer">
-
-                        <span class="status active">
-                            Activo
-                        </span>
 
 
                         <a
-                            href="https://github.com/NoeliaPaolaGarciaO/Portfolio"
+                            href="https://github.com/NoeliaPaolaGarciaO"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-secondary"
+                        >
+                            GitHub
+                        </a>
+
+
+                        <a
+                            href="assets/cv/CV-Noelia-Garcia.pdf"
+                            class="btn btn-outline"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Código ↗
+                            Descargar CV
                         </a>
 
                     </div>
 
-                </div>
 
-            </article>
+                    <div class="hero-note">
 
+                        <span>
+                            📍 Bahía Blanca, Argentina
+                        </span>
 
+                        <span>
+                            Aprendiendo · construyendo · mejorando
+                        </span>
 
-            <!-- MALETA AZUL -->
-
-            <article class="project-card">
-
-                <div class="project-image-wrap">
-
-                    <img
-                        src="assets/images/projects/maleta-azul/portada.png"
-                        alt="Las aventuras de la maleta azul"
-                        loading="lazy"
-                    >
+                    </div>
 
                 </div>
 
+            </div>
 
-                <div class="project-content">
+        </section>
 
-                    <span class="project-category">
-                        Creatividad
+
+
+        <!-- =====================================================
+             SOBRE MÍ
+        ====================================================== -->
+
+        <section
+            class="about section"
+            id="about"
+        >
+
+            <div class="container">
+
+
+                <div class="section-header">
+
+                    <span class="section-tag">
+                        Sobre mí
                     </span>
 
 
-                    <h3>
-                        Las aventuras de la maleta azul
-                    </h3>
+                    <h2>
+                        Tecnología con una mirada de negocio
+                    </h2>
 
 
                     <p>
 
-                        Proyecto editorial infantil que combina
-                        escritura, narrativa, ilustración digital
-                        y herramientas de IA para crear una experiencia
-                        visual y literaria.
+                        Mi recorrido comenzó en turismo,
+                        donde desarrollé experiencia en administración,
+                        organización, ventas, operaciones y atención al cliente.
+
+                        Esa experiencia hoy forma parte de mi manera
+                        de entender los problemas y pensar soluciones digitales.
 
                     </p>
 
+                </div>
 
-                    <div class="project-tech">
 
-                        <span>Storytelling</span>
-                        <span>IA</span>
-                        <span>Canva</span>
-                        <span>Ilustración</span>
+
+                <div class="about-grid">
+
+
+                    <div class="about-text">
+
+                        <p>
+
+                            Me interesa crear soluciones que no solo
+                            funcionen y se vean bien, sino que resuelvan
+                            problemas concretos.
+
+                        </p>
+
+
+                        <p>
+
+                            Ordenar información, mejorar procesos,
+                            automatizar tareas y facilitar la experiencia
+                            de las personas son algunos de los desafíos
+                            que me interesan.
+
+                        </p>
+
+
+                        <p>
+
+                            Actualmente continúo fortaleciendo mis conocimientos
+                            en Salesforce, desarrollo web y calidad de software
+                            mediante formación y proyectos prácticos.
+
+                        </p>
+
+
+                        <a
+                            href="#contact"
+                            class="btn btn-primary"
+                        >
+                            Conocer mis enlaces
+                        </a>
 
                     </div>
 
 
-                    <div class="project-footer">
 
-                        <span class="status development">
-                            En desarrollo
-                        </span>
+                    <div class="about-cards">
+
+
+                        <article class="about-card">
+
+                            <span>
+                                01 · Turismo
+                            </span>
+
+                            <h3>
+                                Experiencia real de negocio
+                            </h3>
+
+                            <p>
+                                Clientes, ventas, reservas,
+                                operaciones y atención personalizada.
+                            </p>
+
+                        </article>
+
+
+                        <article class="about-card">
+
+                            <span>
+                                02 · Salesforce
+                            </span>
+
+                            <h3>
+                                CRM y automatización
+                            </h3>
+
+                            <p>
+                                Administración de CRM, objetos,
+                                relaciones, datos y Flow Builder.
+                            </p>
+
+                        </article>
+
+
+                        <article class="about-card">
+
+                            <span>
+                                03 · Web
+                            </span>
+
+                            <h3>
+                                Desarrollo frontend
+                            </h3>
+
+                            <p>
+                                HTML, CSS y JavaScript para crear
+                                sitios responsive y experiencias digitales.
+                            </p>
+
+                        </article>
+
+
+                        <article class="about-card">
+
+                            <span>
+                                04 · Creatividad
+                            </span>
+
+                            <h3>
+                                Ideas que se convierten en proyectos
+                            </h3>
+
+                            <p>
+                                Escritura, storytelling, diseño editorial
+                                y proyectos digitales propios.
+                            </p>
+
+                        </article>
+
 
                     </div>
 
                 </div>
-
-            </article>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     SALESFORCE
-===================================================== -->
-
-<section
-    class="salesforce section"
-    id="salesforce"
->
-
-    <div class="container">
-
-
-        <div class="section-header">
-
-            <span class="section-tag">
-                Salesforce
-            </span>
-
-
-            <h2>
-                Un recorrido que sigo construyendo
-            </h2>
-
-
-            <p>
-
-                Mi formación combina Trailhead,
-                práctica en una organización de aprendizaje
-                y proyectos propios donde llevo los conceptos
-                de Salesforce a situaciones concretas.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="salesforce-grid">
-
-
-            <aside class="profile-card">
-
-                <span class="profile-kicker">
-                    Trailblazer
-                </span>
-
-
-                <h3>
-                    Aprendizaje + práctica
-                </h3>
-
-
-                <p>
-
-                    Formación continua en administración de CRM,
-                    automatización, datos y herramientas
-                    del ecosistema Salesforce.
-
-                </p>
-
-
-                <a
-                    href="https://www.salesforce.com/trailblazer/noeliapgarcia"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn btn-light"
-                >
-                    Ver perfil ↗
-                </a>
-
-            </aside>
-
-
-
-            <div class="timeline">
-
-
-                <article class="timeline-item">
-
-                    <span class="timeline-dot"></span>
-
-                    <div class="timeline-content">
-
-                        <span class="timeline-label">
-                            Trailhead
-                        </span>
-
-                        <h3>
-                            Formación continua
-                        </h3>
-
-                        <p>
-
-                            Badges, módulos y rutas para consolidar
-                            conocimientos de administración
-                            y servicios Salesforce.
-
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-
-                <article class="timeline-item">
-
-                    <span class="timeline-dot"></span>
-
-                    <div class="timeline-content">
-
-                        <span class="timeline-label">
-                            Administración
-                        </span>
-
-                        <h3>
-                            CRM y configuración
-                        </h3>
-
-                        <p>
-
-                            Objetos estándar y personalizados,
-                            campos, relaciones, permisos,
-                            datos y procesos comerciales.
-
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-
-                <article class="timeline-item">
-
-                    <span class="timeline-dot"></span>
-
-                    <div class="timeline-content">
-
-                        <span class="timeline-label">
-                            Automatización
-                        </span>
-
-                        <h3>
-                            Flow Builder
-                        </h3>
-
-                        <p>
-
-                            Diseño y prueba de Flows para crear tareas,
-                            reservas y procesos relacionados con
-                            oportunidades y cotizaciones.
-
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-
-                <article class="timeline-item">
-
-                    <span class="timeline-dot"></span>
-
-                    <div class="timeline-content">
-
-                        <span class="timeline-label">
-                            Proyecto
-                        </span>
-
-                        <h3>
-                            TravelCore CRM
-                        </h3>
-
-                        <p>
-
-                            Aplicación práctica de Salesforce
-                            a procesos de una agencia de viajes:
-                            leads, oportunidades, cotizaciones,
-                            viajes, reservas y tareas operativas.
-
-                        </p>
-
-                    </div>
-
-                </article>
-
 
             </div>
 
-        </div>
+        </section>
 
-    </div>
 
-</section>
 
+        <!-- =====================================================
+             PROYECTOS
+        ====================================================== -->
 
+        <section
+            class="projects section"
+            id="projects"
+        >
 
-<!-- =====================================================
-     TECNOLOGÍAS
-===================================================== -->
+            <div class="container">
 
-<section
-    class="skills section"
-    id="skills"
->
 
-    <div class="container">
+                <div class="section-header">
 
+                    <span class="section-tag">
+                        Proyectos
+                    </span>
 
-        <div class="section-header">
 
-            <span class="section-tag">
-                Tecnologías
-            </span>
+                    <h2>
+                        Lo que estoy construyendo
+                    </h2>
 
 
-            <h2>
-                Herramientas que forman parte de mi recorrido
-            </h2>
+                    <p>
 
+                        Una selección de proyectos que muestran
+                        distintas partes de mi recorrido:
+                        turismo, Salesforce, desarrollo web y creatividad.
 
-            <p>
-
-                Una combinación de desarrollo web,
-                CRM, automatización y análisis de datos.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="skills-grid">
-
-
-            <article class="skill-card">
-
-                <span>WEB</span>
-
-                <h3>HTML5</h3>
-
-                <p>
-                    Estructura semántica y accesible.
-                </p>
-
-            </article>
-
-
-
-            <article class="skill-card">
-
-                <span>WEB</span>
-
-                <h3>CSS3</h3>
-
-                <p>
-                    Responsive design, layouts y UI.
-                </p>
-
-            </article>
-
-
-
-            <article class="skill-card">
-
-                <span>WEB</span>
-
-                <h3>JavaScript</h3>
-
-                <p>
-                    Interactividad y comportamiento dinámico.
-                </p>
-
-            </article>
-
-
-
-            <article class="skill-card">
-
-                <span>CRM</span>
-
-                <h3>Salesforce</h3>
-
-                <p>
-                    Administración y configuración de CRM.
-                </p>
-
-            </article>
-
-
-
-            <article class="skill-card">
-
-                <span>AUTOMATION</span>
-
-                <h3>Flow Builder</h3>
-
-                <p>
-                    Automatización de procesos.
-                </p>
-
-            </article>
-
-
-
-            <article class="skill-card">
-
-                <span>DATA</span>
-
-                <h3>Power BI</h3>
-
-                <p>
-                    Dashboards y visualización de datos.
-                </p>
-
-            </article>
-
-
-
-            <article class="skill-card">
-
-                <span>DATA</span>
-
-                <h3>Excel</h3>
-
-                <p>
-                    Análisis y organización de información.
-                </p>
-
-            </article>
-
-
-
-            <article class="skill-card">
-
-                <span>CODE</span>
-
-                <h3>Git & GitHub</h3>
-
-                <p>
-                    Control de versiones y publicación.
-                </p>
-
-            </article>
-
-
-
-            <article class="skill-card">
-
-                <span>BACKEND</span>
-
-                <h3>Supabase</h3>
-
-                <p>
-                    Base de datos y servicios para proyectos web.
-                </p>
-
-            </article>
-
-
-
-            <article class="skill-card">
-
-                <span>TOOLS</span>
-
-                <h3>VS Code</h3>
-
-                <p>
-                    Entorno principal de desarrollo.
-                </p>
-
-            </article>
-
-
-
-            <article class="skill-card">
-
-                <span>WEB</span>
-
-                <h3>SEO</h3>
-
-                <p>
-                    Buenas prácticas para sitios web.
-                </p>
-
-            </article>
-
-
-
-            <article class="skill-card">
-
-                <span>DESIGN</span>
-
-                <h3>Canva</h3>
-
-                <p>
-                    Diseño visual y contenido digital.
-                </p>
-
-            </article>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     CONTACTO
-===================================================== -->
-
-<section
-    class="contact section"
-    id="contact"
->
-
-    <div class="container contact-container">
-
-
-        <div class="section-header">
-
-            <span class="section-tag">
-                Contacto
-            </span>
-
-
-            <h2>
-                ¿Querés conocer más?
-            </h2>
-
-
-            <p>
-
-                Podés encontrarme en estos espacios
-                y conocer un poco más de mi recorrido,
-                mis proyectos y lo que estoy aprendiendo.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="contact-grid">
-
-
-            <a
-                href="https://github.com/NoeliaPaolaGarciaO"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-card"
-            >
-
-                <span class="contact-icon">
-                    GH
-                </span>
-
-                <div>
-
-                    <strong>
-                        GitHub
-                    </strong>
-
-                    <small>
-                        Repositorios y código
-                    </small>
+                    </p>
 
                 </div>
 
-                <span>
-                    ↗
-                </span>
-
-            </a>
 
 
+                <div class="projects-grid">
 
-            <a
-                href="https://www.linkedin.com/in/noeliapgarcia/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-card"
-            >
 
-                <span class="contact-icon">
-                    in
-                </span>
+                    <!-- TRAVELCORE SAAS -->
 
-                <div>
+                    <article class="project-card featured">
 
-                    <strong>
-                        LinkedIn
-                    </strong>
+                        <div class="project-image-wrap">
 
-                    <small>
-                        Perfil profesional
-                    </small>
+                            <img
+                                src="assets/images/projects/travelcore-saas/portada.png"
+                                alt="Vista de TravelCore SaaS"
+                                loading="lazy"
+                            >
+
+                            <span class="project-label">
+                                Proyecto principal
+                            </span>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                SaaS · Turismo
+                            </span>
+
+
+                            <h3>
+                                TravelCore SaaS
+                            </h3>
+
+
+                            <p>
+
+                                Plataforma en desarrollo para centralizar
+                                clientes, cotizaciones, reservas, vouchers,
+                                proveedores y procesos operativos
+                                de agencias de viajes.
+
+                            </p>
+
+
+                            <div class="project-tech">
+
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>GitHub</span>
+
+                            </div>
+
+
+                            <div class="project-footer">
+
+                                <span class="status development">
+                                    En desarrollo
+                                </span>
+
+
+                                <div class="project-links">
+
+                                    <a
+                                        href="https://noeliapaolagarciao.github.io/travelcore-saas/login.html"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Demo ↗
+                                    </a>
+
+
+                                    <a
+                                        href="https://github.com/NoeliaPaolaGarciaO/travelcore-saas"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        GitHub ↗
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- SALESFORCE CRM -->
+
+                    <article class="project-card">
+
+                        <div class="project-image-wrap">
+
+                            <img
+                                src="assets/images/projects/salesforce-crm/portada.png"
+                                alt="Proyecto TravelCore CRM desarrollado en Salesforce"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Salesforce
+                            </span>
+
+
+                            <h3>
+                                TravelCore CRM
+                            </h3>
+
+
+                            <p>
+
+                                Proyecto CRM orientado a una agencia
+                                de viajes, donde aplico conceptos de
+                                administración, datos, relaciones,
+                                automatización y procesos comerciales.
+
+                            </p>
+
+
+                            <div class="project-tech">
+
+                                <span>Salesforce</span>
+                                <span>CRM</span>
+                                <span>Flow Builder</span>
+                                <span>Automation</span>
+
+                            </div>
+
+
+                            <div class="project-footer">
+
+                                <span class="status development">
+                                    En desarrollo
+                                </span>
+
+
+                                <a href="#salesforce">
+                                    Ver recorrido ↗
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- CHAIN OF LINKS -->
+
+                    <article class="project-card">
+
+                        <div class="project-image-wrap">
+
+                            <img
+                                src="assets/images/projects/chain-of-links/portada.png"
+                                alt="Vista de Chain of Links"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Frontend
+                            </span>
+
+
+                            <h3>
+                                Chain of Links
+                            </h3>
+
+
+                            <p>
+
+                                Página para reunir enlaces personales
+                                en un solo lugar, desarrollada con HTML,
+                                CSS y JavaScript y pensada para una
+                                experiencia simple y responsive.
+
+                            </p>
+
+
+                            <div class="project-tech">
+
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>GitHub</span>
+
+                            </div>
+
+
+                            <div class="project-footer">
+
+                                <span class="status">
+                                    Finalizado
+                                </span>
+
+
+                                <div class="project-links">
+
+                                    <a
+                                        href="https://noeliapaolagarciao.github.io/chain_of_links/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Demo ↗
+                                    </a>
+
+
+                                    <a
+                                        href="https://github.com/NoeliaPaolaGarciaO/chain_of_links"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        GitHub ↗
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PORTFOLIO -->
+
+                    <article class="project-card">
+
+                        <div class="project-image-wrap">
+
+                            <img
+                                src="assets/images/projects/portfolio/portada.png"
+                                alt="Vista del portfolio personal de Noelia García"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Frontend
+                            </span>
+
+
+                            <h3>
+                                Este portfolio
+                            </h3>
+
+
+                            <p>
+
+                                Sitio personal desarrollado desde cero
+                                con HTML5, CSS3 y JavaScript.
+
+                                Diseñado para reunir mi recorrido,
+                                proyectos y aprendizaje.
+
+                            </p>
+
+
+                            <div class="project-tech">
+
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Git</span>
+                                <span>GitHub</span>
+
+                            </div>
+
+
+                            <div class="project-footer">
+
+                                <span class="status active">
+                                    Activo
+                                </span>
+
+
+                                <div class="project-links">
+
+                                    <a
+                                        href="https://github.com/NoeliaPaolaGarciaO/Portfolio"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Código ↗
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- MALETA AZUL -->
+
+                    <article class="project-card">
+
+                        <div class="project-image-wrap">
+
+                            <img
+                                src="assets/images/projects/maleta-azul/portada.png"
+                                alt="Las aventuras de la maleta azul"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Creatividad
+                            </span>
+
+
+                            <h3>
+                                Las aventuras de la maleta azul
+                            </h3>
+
+
+                            <p>
+
+                                Proyecto editorial infantil que combina
+                                escritura, narrativa, dirección visual
+                                e ilustración digital.
+
+                            </p>
+
+
+                            <div class="project-tech">
+
+                                <span>Storytelling</span>
+                                <span>Escritura</span>
+                                <span>Ilustración</span>
+                                <span>Diseño editorial</span>
+
+                            </div>
+
+
+                            <div class="project-footer">
+
+                                <span class="status">
+                                    Finalizado
+                                </span>
+
+
+                                <div class="project-links">
+
+                                    <a href="proyectos/maleta-azul/">
+                                        Ver proyecto ↗
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
 
                 </div>
 
-                <span>
-                    ↗
-                </span>
+            </div>
 
-            </a>
+        </section>
 
 
 
-            <a
-                href="https://www.salesforce.com/trailblazer/noeliapgarcia"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-card"
-            >
+        <!-- =====================================================
+             SALESFORCE
+        ====================================================== -->
 
-                <span class="contact-icon">
-                    SF
-                </span>
+        <section
+            class="salesforce section"
+            id="salesforce"
+        >
 
-                <div>
-
-                    <strong>
-                        Trailhead
-                    </strong>
-
-                    <small>
-                        Mi recorrido Salesforce
-                    </small>
-
-                </div>
-
-                <span>
-                    ↗
-                </span>
-
-            </a>
+            <div class="container">
 
 
+                <div class="section-header">
 
-            <a
-                href="https://substack.com/@noepgarcia"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-card"
-            >
+                    <span class="section-tag">
+                        Salesforce
+                    </span>
 
-                <span class="contact-icon">
-                    ✍
-                </span>
 
-                <div>
+                    <h2>
+                        Un recorrido que sigo construyendo
+                    </h2>
 
-                    <strong>
-                        Substack
-                    </strong>
 
-                    <small>
-                        Lo que escribo
-                    </small>
+                    <p>
+
+                        Mi formación combina Trailhead,
+                        práctica en una organización de aprendizaje
+                        y proyectos propios donde llevo los conceptos
+                        de Salesforce a situaciones concretas.
+
+                    </p>
 
                 </div>
 
-                <span>
-                    ↗
-                </span>
-
-            </a>
 
 
-        </div>
-
-    </div>
-
-</section>
+                <div class="salesforce-grid">
 
 
-</main>
+                    <aside class="profile-card">
+
+                        <span class="profile-kicker">
+                            Trailblazer
+                        </span>
+
+
+                        <h3>
+                            Aprendizaje + práctica
+                        </h3>
+
+
+                        <p>
+
+                            Formación continua en administración de CRM,
+                            automatización, datos y herramientas
+                            del ecosistema Salesforce.
+
+                        </p>
+
+
+                        <a
+                            href="https://www.salesforce.com/trailblazer/noeliapgarcia"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-light"
+                        >
+                            Ver perfil ↗
+                        </a>
+
+                    </aside>
 
 
 
-<button
-    id="backToTop"
-    class="back-to-top"
-    type="button"
-    aria-label="Volver arriba"
->
-    ↑
-</button>
+                    <div class="timeline">
+
+
+                        <article class="timeline-item">
+
+                            <span class="timeline-dot"></span>
+
+                            <div class="timeline-content">
+
+                                <span class="timeline-label">
+                                    Trailhead
+                                </span>
+
+                                <h3>
+                                    Formación continua
+                                </h3>
+
+                                <p>
+
+                                    Badges, módulos y rutas para
+                                    consolidar conocimientos
+                                    del ecosistema Salesforce.
+
+                                </p>
+
+                            </div>
+
+                        </article>
 
 
 
-<footer class="footer">
+                        <article class="timeline-item">
 
-    <div class="container footer-inner">
+                            <span class="timeline-dot"></span>
+
+                            <div class="timeline-content">
+
+                                <span class="timeline-label">
+                                    Administración
+                                </span>
+
+                                <h3>
+                                    CRM y configuración
+                                </h3>
+
+                                <p>
+
+                                    Objetos estándar y personalizados,
+                                    campos, relaciones, permisos,
+                                    datos y procesos comerciales.
+
+                                </p>
+
+                            </div>
+
+                        </article>
 
 
-        <div>
 
-            <strong>
+                        <article class="timeline-item">
+
+                            <span class="timeline-dot"></span>
+
+                            <div class="timeline-content">
+
+                                <span class="timeline-label">
+                                    Automatización
+                                </span>
+
+                                <h3>
+                                    Flow Builder
+                                </h3>
+
+                                <p>
+
+                                    Diseño y prueba de Flows para
+                                    automatizar procesos y conectar
+                                    distintas partes del CRM.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <article class="timeline-item">
+
+                            <span class="timeline-dot"></span>
+
+                            <div class="timeline-content">
+
+                                <span class="timeline-label">
+                                    Proyecto propio
+                                </span>
+
+                                <h3>
+                                    TravelCore CRM
+                                </h3>
+
+                                <p>
+
+                                    Aplicación práctica de Salesforce
+                                    a procesos de una agencia de viajes:
+                                    leads, oportunidades, cotizaciones,
+                                    viajes, reservas y tareas operativas.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             FORMACIÓN
+        ====================================================== -->
+
+        <section
+            class="education section"
+            id="education"
+        >
+
+            <div class="container">
+
+
+                <div class="section-header">
+
+                    <span class="section-tag">
+                        Formación
+                    </span>
+
+
+                    <h2>
+                        Aprendizaje continuo
+                    </h2>
+
+
+                    <p>
+
+                        Mi formación se construye a través de cursos,
+                        plataformas de aprendizaje y proyectos prácticos.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="about-cards">
+
+
+                    <article class="about-card">
+
+                        <span>
+                            Salesforce
+                        </span>
+
+                        <h3>
+                            Trailhead
+                        </h3>
+
+                        <p>
+
+                            Formación continua en administración,
+                            CRM, automatización, datos y herramientas
+                            del ecosistema Salesforce.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="about-card">
+
+                        <span>
+                            QA
+                        </span>
+
+                        <h3>
+                            Tester QA
+                        </h3>
+
+                        <p>
+
+                            Formación orientada a testing de software,
+                            calidad y procesos de prueba.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="about-card">
+
+                        <span>
+                            Desarrollo Web
+                        </span>
+
+                        <h3>
+                            Frontend
+                        </h3>
+
+                        <p>
+
+                            Aprendizaje práctico mediante proyectos
+                            desarrollados con HTML5, CSS3 y JavaScript.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="about-card">
+
+                        <span>
+                            Data
+                        </span>
+
+                        <h3>
+                            Análisis y visualización
+                        </h3>
+
+                        <p>
+
+                            Formación y práctica en Excel,
+                            Power BI y organización de información.
+
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             TECNOLOGÍAS
+        ====================================================== -->
+
+        <section
+            class="skills section"
+            id="skills"
+        >
+
+            <div class="container">
+
+
+                <div class="section-header">
+
+                    <span class="section-tag">
+                        Tecnologías
+                    </span>
+
+
+                    <h2>
+                        Herramientas que realmente utilizo
+                    </h2>
+
+
+                    <p>
+
+                        Un stack construido principalmente alrededor
+                        del desarrollo web, Salesforce y control de versiones.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="skills-grid">
+
+
+                    <article class="skill-card">
+
+                        <span>
+                            WEB
+                        </span>
+
+                        <h3>
+                            HTML5
+                        </h3>
+
+                        <p>
+                            Estructura semántica y accesible.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="skill-card">
+
+                        <span>
+                            WEB
+                        </span>
+
+                        <h3>
+                            CSS3
+                        </h3>
+
+                        <p>
+                            Responsive design, layouts y UI.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="skill-card">
+
+                        <span>
+                            WEB
+                        </span>
+
+                        <h3>
+                            JavaScript
+                        </h3>
+
+                        <p>
+                            Interactividad y comportamiento dinámico.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="skill-card">
+
+                        <span>
+                            CRM
+                        </span>
+
+                        <h3>
+                            Salesforce
+                        </h3>
+
+                        <p>
+                            Administración, configuración,
+                            datos y automatización.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="skill-card">
+
+                        <span>
+                            CODE
+                        </span>
+
+                        <h3>
+                            Git
+                        </h3>
+
+                        <p>
+                            Control de versiones y seguimiento
+                            de cambios en proyectos.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="skill-card">
+
+                        <span>
+                            CODE
+                        </span>
+
+                        <h3>
+                            GitHub
+                        </h3>
+
+                        <p>
+                            Repositorios, publicación de proyectos
+                            y GitHub Pages.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="skill-card">
+
+                        <span>
+                            DOCUMENTATION
+                        </span>
+
+                        <h3>
+                            README.md
+                        </h3>
+
+                        <p>
+                            Documentación de proyectos,
+                            funcionalidades y próximos pasos.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CONTACTO
+        ====================================================== -->
+
+        <section
+            class="contact section"
+            id="contact"
+        >
+
+            <div class="container contact-container">
+
+
+                <div class="section-header">
+
+                    <span class="section-tag">
+                        Contacto
+                    </span>
+
+
+                    <h2>
+                        ¿Querés conocer más?
+                    </h2>
+
+
+                    <p>
+
+                        Podés encontrarme en estos espacios
+                        y conocer mis proyectos,
+                        mi recorrido y lo que estoy aprendiendo.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="contact-grid">
+
+
+                    <a
+                        href="https://github.com/NoeliaPaolaGarciaO"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card"
+                    >
+
+                        <span class="contact-icon">
+                            GH
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                GitHub
+                            </strong>
+
+                            <small>
+                                Repositorios y código
+                            </small>
+
+                        </div>
+
+                        <span>
+                            ↗
+                        </span>
+
+                    </a>
+
+
+
+                    <a
+                        href="https://www.linkedin.com/in/noeliapgarcia/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card"
+                    >
+
+                        <span class="contact-icon">
+                            in
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                LinkedIn
+                            </strong>
+
+                            <small>
+                                Perfil profesional
+                            </small>
+
+                        </div>
+
+                        <span>
+                            ↗
+                        </span>
+
+                    </a>
+
+
+
+                    <a
+                        href="https://www.salesforce.com/trailblazer/noeliapgarcia"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card"
+                    >
+
+                        <span class="contact-icon">
+                            SF
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Salesforce
+                            </strong>
+
+                            <small>
+                                Mi recorrido Salesforce
+                            </small>
+
+                        </div>
+
+                        <span>
+                            ↗
+                        </span>
+
+                    </a>
+
+
+
+                    <a
+                        href="https://substack.com/@noepgarcia"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card"
+                    >
+
+                        <span class="contact-icon">
+                            ✍
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Substack
+                            </strong>
+
+                            <small>
+                                Lo que escribo
+                            </small>
+
+                        </div>
+
+                        <span>
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         BACK TO TOP
+    ====================================================== -->
+
+    <button
+        id="backToTop"
+        class="back-to-top"
+        type="button"
+        aria-label="Volver arriba"
+    >
+        ↑
+    </button>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
+
+            <div>
+
+                <strong>
+                    Noelia García
+                </strong>
+
+                <p>
+                    Tecnología · Turismo · Creatividad
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">
+                    Inicio
+                </a>
+
+                <a href="#projects">
+                    Proyectos
+                </a>
+
+                <a href="#salesforce">
+                    Salesforce
+                </a>
+
+                <a href="#contact">
+                    Contacto
+                </a>
+
+            </div>
+
+
+            <p class="footer-copy">
+
+                ©
+                <span id="currentYear"></span>
                 Noelia García
-            </strong>
 
-            <p>
-                Salesforce · Desarrollo Web · Data
             </p>
 
         </div>
 
-
-        <div class="footer-links">
-
-            <a href="#home">
-                Inicio
-            </a>
-
-            <a href="#projects">
-                Proyectos
-            </a>
-
-            <a href="#contact">
-                Contacto
-            </a>
-
-        </div>
-
-
-        <p class="footer-copy">
-
-            ©
-            <span id="currentYear"></span>
-            Noelia García
-
-        </p>
-
-
-    </div>
-
-</footer>
+    </footer>
 
 
 
-<script src="js/main.js"></script>
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
 
 </body>
 
